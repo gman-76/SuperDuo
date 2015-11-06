@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_launcher"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/widget_title"
+                android:layout_gravity="center_horizontal"
+                android:textSize="@dimen/widget_text_size"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/widget"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/widget_home_team"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/widget_text_size"
+                android:layout_marginRight="5dp"
+                android:layout_marginEnd="5dp"
+                />
+            <TextView
+                android:id="@+id/widget_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/widget_text_size"
+                android:layout_marginRight="5dp"
+                android:layout_marginEnd="5dp"
+                />
+            <TextView
+                android:id="@+id/widget_away_team"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/widget_text_size"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>
